@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+}
+
+.container {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+.password-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 700px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.23);
+}
+
+.defalt_header{
+    font-weight: 500;
+    font-size: 24px;
+    color: #333;
+}
+
+.show_password{
+    display: none;
+    font-weight: 700;
+    font-size: 17px;
+    color: #333;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.copyBtn{
+    display: none;
+    position: absolute;
+    right: 15px;
+    background-color: #1d8e04;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.customizer{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295);
+}
+
+.customizer h2{
+    color: #333;
+}
+
+.customizer p{
+    color: #595959;
+    font-weight: 700;
+}
+
+
+.num_length{
+    width: 50px;
+    height: 35px;
+    border: solid 1px #9a9a9a;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.password-length{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.num_range{
+    accent-color: #1d8e04;
+    width: 90%;
+}
+
+.option1,.option2{
+    display: flex;
+    accent-color: #1d8e04;
+    gap: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+.checkbox{
+    display: flex;
+    gap: 5px;
+}
