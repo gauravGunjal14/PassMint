@@ -45,7 +45,7 @@ body {
 }
 
 .show_password{
-    display: none;
+    /* display: none; */
     font-weight: 700;
     font-size: 17px;
     color: #333;
@@ -71,7 +71,7 @@ body {
 
 .customizer{
     display: flex;
-    padding: 10px;
+    padding: 20px 30px 40px 30px;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 10px;
@@ -87,7 +87,6 @@ body {
     color: #595959;
     font-weight: 700;
 }
-
 
 .num_length{
     width: 50px;
@@ -120,7 +119,48 @@ body {
     color: #333;
 }
 
+.option1 label, .option2 label{
+    cursor: pointer;
+}
+
 .checkbox{
     display: flex;
     gap: 5px;
+}
+
+.findMe{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+.icons{
+    height: 30px;
+
+}
+
+.generate{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px 0;
+}
+
+.generateBtn{
+    background-color: #1d8e04;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 70%;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
 }
