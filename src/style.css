@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,47 +7,53 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .root {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
     background: #f6f6f6;
 }
 
-.hero{
+.home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.hero {
     margin-left: 100px;
 }
 
-.hero h1 span{
+.hero h1 span {
     font-size: 70px;
     font-weight: 700;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero1{
+.hero1 {
     color: #0e4203;
 }
 
-.hero2{
+.hero2 {
     color: #135c03;
 }
 
-.hero3{
+.hero3 {
     color: #1d8e04;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 30px;
     margin-top: 20px;
     color: #484848;
 }
 
-.hero p{
+.hero p {
     margin-top: 20px;
     font-size: 18px;
     color: #595959;
@@ -56,47 +62,57 @@ body {
 }
 
 .container {
-    padding: 10px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin-right: 100px;
 }
 
-.password-display{
+.git-repo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 18px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.container1 {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.password-display {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     height: 60px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    width: 700px;
+    margin-bottom: 30px;
+    width: 650px;
+    max-width: 100%;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 8px #0000003b;
 }
 
-.password-display:hover{
-    transform: scaleX(1.01);
-    transition: transform 0.5s ease;
-}
-
-.password-display:hover{
-    transform: scaleX(1.01);
-    transition: transform 0.5s ease;
-}
-
-.show_password{
+.show_password {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 16px;
     color: #333;
     animation: fadeIn 0.5s ease-in;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.copyBtn{
+.copyBtn {
     display: none;
     position: absolute;
     right: 15px;
@@ -108,96 +124,93 @@ body {
     font-size: 16px;
 }
 
-.customizer{
+.customizer {
     display: flex;
     padding: 20px 30px 40px 30px;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 10px;
-    gap: 20px;
+    gap: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295);
 }
 
-.customizer h2{
-    color: #333;
+.customizer h2 {
+    color: #5b5b5b;
 }
 
-.customizer p{
+.customizer p {
     color: #595959;
     font-weight: 700;
 }
 
-.num_length{
+.num_length {
     width: 50px;
     height: 35px;
     border: solid 1px #9a9a9a;
     border-radius: 5px;
-    display: flex;
     text-align: center;
     font-size: 20px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
-.password-length{
+.password-length {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px
 }
 
-.num_range{
+.num_range {
     accent-color: #1d8e04;
     width: 90%;
 }
 
-.option1,.option2{
+.option1,
+.option2 {
     display: flex;
+    flex-wrap: wrap;
     accent-color: #1d8e04;
-    gap: 50px;
+    gap: 20px;
     font-weight: 500;
     color: #333;
 }
 
-.option1 label, .option2 label{
-    cursor: pointer;
-}
-
-.checkbox{
+.checkbox {
     display: flex;
     gap: 5px;
 }
 
-.findMe{
+.findMe {
     display: flex;
     flex-direction: column;
     width: 30%;
+    gap: 6px;
 }
 
-.links{
+.links {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.icons{
+.icons {
     height: 30px;
-
 }
 
-.generate{
+.generate {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px 0;
 }
 
-.generateBtn{
+.generateBtn {
     background-color: #1d8e04;
     color: white;
     border: none;
     padding: 12px;
-    width: 70%;
-    margin-top: 30px;
+    width: 60%;
+    margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -205,7 +218,98 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.generateBtn:hover{
+.generateBtn:hover {
     background-color: #125603;
-    transition: background-color 0.3s ease;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 1450px) {
+
+    .hero {
+        margin-left: 20px;
+    }
+
+    .hero h1 span {
+        font-size: 60px;
+    }
+
+    .hero p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .container {
+        margin-right: 20px;
+        width: 80%;
+    }
+
+    .password-display {
+        width: 100%;
+    }
+}
+/* Tablets */
+@media (max-width: 992px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero {
+        height: 100vh;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 span {
+        font-size: 50px;
+    }
+
+    .hero p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .container {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .password-display {
+        width: 100%;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+
+
+    .hero h1 span {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .customizer {
+        padding: 15px;
+    }
+
+    .option1,
+    .option2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .generateBtn {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
