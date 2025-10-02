@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ body {
 }
 
 .root {
-    background: #f6f6f6;
+    background: #ffffff;
 }
 
 .home {
@@ -55,10 +59,27 @@ body {
 
 .hero p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 19px;
     color: #595959;
     width: 500px;
     line-height: 1.5;
+}
+
+.generateNowBtn {
+    display: none;
+    margin-top: 30px;
+    background-color: #1d8e04;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.generateNowBtn:hover {
+    background-color: #125603;
 }
 
 .container {
@@ -173,6 +194,7 @@ body {
     gap: 20px;
     font-weight: 500;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .checkbox {
@@ -226,7 +248,7 @@ body {
 @media (max-width: 1450px) {
 
     .hero {
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     .hero h1 span {
@@ -239,28 +261,43 @@ body {
     }
 
     .container {
-        margin-right: 20px;
+        margin-right: 40px;
         width: 80%;
+    }
+
+    .container a svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .links {
+        gap: 3%;
     }
 
     .password-display {
         width: 100%;
     }
 }
+
 /* Tablets */
 @media (max-width: 992px) {
     .home {
         flex-direction: column;
         text-align: center;
-        padding: 40px 20px;
+        padding: 0;
+        gap: 100px;
+        height: 100vh;
+        justify-content: space-around;
+        margin-top: 250px;
+        margin-bottom: 70px;
     }
 
     .hero {
-        height: 100vh;
         margin-left: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .hero h1 span {
@@ -268,13 +305,32 @@ body {
     }
 
     .hero p {
-        width: 100%;
+        width: 70%;
         font-size: 16px;
+    }
+
+    .generateNowBtn {
+        display: block;
+    }
+
+    .findMe p {
+        align-self: start;
+        text-align: center;
+        font-size: 14px;
     }
 
     .container {
         margin-right: 0;
         width: 100%;
+    }
+
+    .container a svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .links {
+        gap: 0;
     }
 
     .password-display {
@@ -284,14 +340,18 @@ body {
 
 /* Mobiles */
 @media (max-width: 600px) {
-
+    .home {
+        height: 100vh;
+        justify-content: space-around;
+        /* margin-bottom: 50px; */
+    }
 
     .hero h1 span {
         font-size: 36px;
     }
 
     .hero h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .hero p {
@@ -300,6 +360,15 @@ body {
 
     .customizer {
         padding: 15px;
+    }
+
+    .container a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .links {
+        gap: 3px;
     }
 
     .option1,
