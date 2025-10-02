@@ -1,6 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
 function Hero() {
   return (
     <div className="hero">

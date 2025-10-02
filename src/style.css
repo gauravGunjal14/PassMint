@@ -128,7 +128,7 @@ body {
 .show_password {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     color: #333;
     animation: fadeIn 0.5s ease-in;
 }
@@ -137,8 +137,8 @@ body {
     display: none;
     position: absolute;
     right: 15px;
-    background-color: #1d8e04;
-    padding: 10px;
+    background-color: #67ad58;
+    padding: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -231,7 +231,7 @@ body {
     color: white;
     border: none;
     padding: 12px;
-    width: 60%;
+    width: 50%;
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -242,6 +242,98 @@ body {
 
 .generateBtn:hover {
     background-color: #125603;
+}
+
+.features {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.features h3 {
+    font-size: 45px;
+    margin: 70px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 70px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    gap: 20px;
+    border: 0.5px solid #929292;
+    /* box-shadow:  0 8px 16px rgba(0, 0, 0, 0.71); */
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.221);
+}
+
+.feature-card img,
+svg {
+    align-self: center;
+}
+
+.feature-card h4 {
+    align-self: center;
+    font-size: 20px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 16px;
+    text-align: justify;
+    color: #333;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h3 {
+    font-size: 45px;
+    margin: 70px 0 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.about p {
+    font-size: 20px;
+    text-align: justify;
+    color: #333;
+    width: 70%;
+    margin-bottom: 70px;
+    text-align: justify;
+}
+
+.footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1e1;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.name {
+    text-decoration: none;
+    color: #156305;
 }
 
 /* ---------- RESPONSIVE DESIGN ---------- */
@@ -258,6 +350,11 @@ body {
     .hero p {
         width: 100%;
         font-size: 16px;
+    }
+
+    .show_password {
+        font-weight: 600;
+        font-size: 8px;
     }
 
     .container {
@@ -309,6 +406,11 @@ body {
         font-size: 16px;
     }
 
+    .show_password {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
     .generateNowBtn {
         display: block;
     }
@@ -336,6 +438,10 @@ body {
     .password-display {
         width: 100%;
     }
+
+    .features h3 {
+        font-size: 38px;
+    }
 }
 
 /* Mobiles */
@@ -343,7 +449,7 @@ body {
     .home {
         height: 100vh;
         justify-content: space-around;
-        /* margin-bottom: 50px; */
+        margin-bottom: 200px;
     }
 
     .hero h1 span {
@@ -356,6 +462,11 @@ body {
 
     .hero p {
         font-size: 14px;
+    }
+
+    .show_password {
+        font-weight: 600;
+        font-size: 8px;
     }
 
     .customizer {
@@ -380,5 +491,25 @@ body {
     .generateBtn {
         font-size: 14px;
         padding: 10px;
+    }
+
+    .features h3 {
+        font-size: 28px;
+    }
+
+    .feature-card h4 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
+
+    .about h3 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 16px;
     }
 }
