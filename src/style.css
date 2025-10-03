@@ -427,8 +427,8 @@ svg {
     }
 
     .container a svg {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .links {
@@ -466,7 +466,7 @@ svg {
 
     .show_password {
         font-weight: 600;
-        font-size: 8px;
+        font-size: 9px;
     }
 
     .customizer {
@@ -474,8 +474,8 @@ svg {
     }
 
     .container a svg {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     .links {

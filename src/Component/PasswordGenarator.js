@@ -81,16 +81,16 @@ function PasswordGenarator() {
                     <p className="passLenHeader">Password Length: {length}</p>
 
                     <div className="password-length">
-                        <input className="num_length" type="number" min={1} max={50} value={length}
+                        <input className="num_length" type="number" min={4} max={50} value={length}
                             onChange={(e) => {
                                 let val = +e.target.value;
-                                if (val < 1) val = 1;
+                                if (val < 4) val = 4;
                                 else if (val > 50) val = 50;
                                 setLength(val);
                             }}
                         />
 
-                        <input className="num_range" type="range" min={1} max={50} value={length}
+                        <input className="num_range" type="range" min={4} max={50} value={length}
                             onChange={(e) => setLength(+e.target.value)}
                         />
                     </div>
