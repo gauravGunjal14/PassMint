@@ -89,7 +89,7 @@ An IT student passionate about web development and building practical tools with
 This project was built to practice React and share something useful with others.
 
 🔗 Find me here:
-
+* [Portfolio](https://gauravgunjal.netlify.app/)
 * [GitHub](https://github.com/gauravGunjal14)
 * [LinkedIn](https://www.linkedin.com/in/gaurav-gunjal14/)
 * [X](https://x.com/gaurav_gunjal14)
